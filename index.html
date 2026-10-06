@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<title>spermotroll_db</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scanlines"></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <h1 class="logo">$ spermotroll_db<span class="cursor">_</span></h1>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="wrap">
+    <button type="button" class="tab is-active" data-tab="birthdays">[01] Дни рождения</button>
+    <button type="button" class="tab" data-tab="pvz">[02] Пункты выдачи</button>
+  </div>
+</nav>
+
+<main class="wrap">
+  <section class="panel is-active" id="panel-birthdays">
+    <div id="nearest"></div>
+    <h2 class="section-title">&gt; все_тролли <span id="bday-count" class="count"></span></h2>
+    <div id="bday-list" class="bday-list"></div>
+  </section>
+
+  <section class="panel" id="panel-pvz">
+    <p class="hint">&gt; клик по адресу открывает Яндекс.Карты</p>
+    <div id="pvz-list" class="pvz-list"></div>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
